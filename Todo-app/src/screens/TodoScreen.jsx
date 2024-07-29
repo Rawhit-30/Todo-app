@@ -40,8 +40,8 @@ const TodoScreen = () => {
         ) : (
           <p>No task Available</p>
         )} */}
-        {taskList.map((task, index) => (
-          <Task key={index} task={task} />
+        {taskList.map((task) => (
+          <Task key={task.taskId} task={task} />
         ))}
       </div>
 
